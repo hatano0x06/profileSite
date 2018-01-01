@@ -1,0 +1,15 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+
+
+# release command
+# $ gcloud app browse
+# $ gcloud app deploy
+
+# $ gcloud info
+# $ gcloud config set project myprofile-190812 
+# $ gcloud config set project mangacreator-168316
