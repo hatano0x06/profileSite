@@ -2,6 +2,16 @@ runtime: go
 api_version: go1
 
 handlers:
+- url: /parts/js/(.+\.js)$
+  static_files: parts/js/\1
+  upload: parts/js/(.+\.js)$
+  application_readable: true
+
+- url: /parts/css/(.+\.css)$
+  static_files: parts/css/\1
+  upload: parts/css/(.+\.css)$
+  application_readable: true
+
 - url: /.*
   script: _go_app
 
